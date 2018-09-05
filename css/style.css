@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  outline-style: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #5da9e9;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.form {
+  width: 75%;
+  margin: 2.8125rem auto;
+}
+.form__inner {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1.25rem;
+}
+
+.form__header,
+.form__submit {
+  text-align: center;
+}
+.form__title {
+  margin-bottom: 0.5rem;
+}
+.form__subtitle {
+  margin-top: 0.5rem;
+  font-weight: normal;
+}
+
+.form__section {
+  margin-bottom: 0.9375rem;
+  display: grid;
+}
+@media screen and (min-width: 46.875rem) {
+  .form__section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0.625rem;
+  }
+}
+.form__label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 46.875rem) {
+  .form__label {
+    text-align: right;
+  }
+  .form__label__name,
+  .form__label__role,
+  .form__label__age,
+  .form__label__email {
+    margin-top: 0.5rem;
+  }
+}
+.form__input {
+  padding: 0.3125rem;
+}
+@media screen and (min-width: 46.875rem) {
+  .form__input {
+    width: 15rem;
+  }
+}
+.form__radio-container,
+.form__checkbox-container {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-flow: column;
+}
+@media screen and (min-width: 46.875rem) {
+  .form__radio-container,
+  .form__checkbox-container {
+    margin-top: unset;
+  }
+}
+.form__submit-btn {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: 1px solid #003f91;
+  background-color: #5da9e9;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Survey Form</title>
+</head>
+
+<body>
+	<main class="form">
+		<section class="form__header">
+			<h2 class="form__title">Survey Form</h2>
+			<h3 class="form__subtitle">Let us know how we can improve freeCodeCamp</h3>
+		</section>
+
+		<form class="form__inner">
+			<section class="form__section">
+				<label for="name" class="form__label form__label__name">Name: </label>
+				<input type="text" name="name" class="form__input" placeholder="Enter name" required>
+			</section>
+
+			<section class="form__section">
+				<label for="email" class="form__label form__label__email">Email: </label>
+				<input type="email" name="email" class="form__input" placeholder="Enter email" required>
+			</section>
+
+			<section class="form__section">
+				<label for="age" class="form__label form__label__age">Age: </label>
+				<input type="number" name="age" class="form__input" placeholder="Age" required>
+			</section>
+
+			<section class="form__section">
+				<label for="role" class="form__label form__label__role">Which option best describe your current role?</label>
+				<select name="role" class="form__input">
+					<option value="">Select an option</option>
+					<option value="student">Student</option>
+					<option value="job">Full Time Job</option>
+					<option value="learner">Full Time Learner</option>
+					<option value="anonymous">Prefer not to say</option>
+					<option value="other">Other</option>
+				</select>
+			</section>
+
+			<section class="form__section">
+				<label for="rating" class="form__label">How likely is that you would recommend freeCodeCamp to a friend?</label>
+				<div class="form__radio-container">
+					<label>
+						<input type="radio" name="rating" value="3"> Definitely
+					</label>
+					<label>
+						<input type="radio" name="rating" value="2"> Maybe
+					</label>
+					<label>
+						<input type="radio" name="rating" value="1"> Not sure
+					</label>
+				</div>
+			</section>
+
+			<section class="form__section">
+				<label for="preference" class="form__label">Things that should be improved in the future
+					<br>(Check all that apply):</label>
+
+				<div class="form__checkbox-container">
+					<label>
+						<input type="checkbox" name="preference" value="front-end"> Front-End Projects
+					</label>
+					<label>
+						<input type="checkbox" name="preference" value="back-end"> Back-End Projects
+					</label>
+					<label>
+						<input type="checkbox" name="preference" value="data"> Data Visualization
+					</label>
+					<label>
+						<input type="checkbox" name="preference" value="challenge"> Challenges
+					</label>
+					<label>
+						<input type="checkbox" name="preference" value="community"> Open Source Community
+					</label>
+					<label>
+						<input type="checkbox" name="preference" value="help-rooms"> Gitter Help Rooms
+					</label>
+					<label>
+						<input type="checkbox" name="preference" value="videos"> Videos
+					</label>
+					<label>
+						<input type="checkbox" name="preference" value="meetups"> City Meetups
+					</label>
+					<label>
+						<input type="checkbox" name="preference" value="wiki"> Wiki
+					</label>
+					<label>
+						<input type="checkbox" name="preference" value="forum"> Forum
+					</label>
+					<label>
+						<input type="checkbox" name="preference" value="courses"> Additional Courses
+					</label>
+				</div>
+			</section>
+
+			<section class="form__section">
+				<label for="comment" class="form__label">Any comments or suggestions?</label>
+				<textarea name="comment" placeholder="Enter your comment here..." class="form__input"></textarea>
+			</section>
+
+			<section class="form__submit">
+				<button class="form__submit-btn">Submit</button>
+			</section>
+		</form>
+	</main>
+
+	<script src="./js/survey.js"></script>
+</body>
+
+</html>

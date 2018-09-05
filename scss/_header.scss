@@ -1,0 +1,14 @@
+.form {
+  &__header {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 0.5rem;
+  }
+
+  &__subtitle {
+    margin-top: 0.5rem;
+    font-weight: normal;
+  }
+}

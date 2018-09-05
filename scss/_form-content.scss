@@ -1,0 +1,58 @@
+.form {
+  &__section {
+    margin-bottom: 0.9375rem;
+    display: grid;
+
+    @media screen and (min-width: $small) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 0.625rem;
+    }
+  }
+
+  &__label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+
+    @media screen and (min-width: $small) {
+      text-align: right;
+
+      &__name {
+        margin-top: 0.5rem;
+      }
+
+      &__email {
+        @extend .form__label__name;
+      }
+
+      &__age {
+        @extend .form__label__name;
+      }
+
+      &__role {
+        @extend .form__label__name;
+      }
+    }
+  }
+
+  &__input {
+    padding: 0.3125rem;
+
+    @media screen and (min-width: $small) {
+      width: 15rem;
+    }
+  }
+
+  &__radio-container {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-flow: column;
+
+    @media screen and (min-width: $small) {
+      margin-top: unset;
+    }
+  }
+
+  &__checkbox-container {
+    @extend .form__radio-container;
+  }
+}

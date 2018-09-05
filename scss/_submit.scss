@@ -1,0 +1,15 @@
+.form {
+  &__submit {
+    @extend .form__header;
+
+    &-btn {
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      border: 1px solid $congress-blue;
+      background-color: $cornflower-blue;
+      border-radius: 4px;
+      color: $white;
+      font-weight: 600;
+    }
+  }
+}

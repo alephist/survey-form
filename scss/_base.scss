@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  outline-style: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: $cornflower-blue;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.form {
+  width: 75%;
+  margin: 2.8125rem auto;
+
+  &__inner {
+    background-color: $white;
+    border-radius: 5px;
+    padding: 1.25rem;
+  }
+}
